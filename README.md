@@ -33,13 +33,13 @@ Open `index.html` in your browser to start the game.
 ## 🛠️ Technologies Used 🛠️
 - HTML5
 - CSS3 (transitions, layout)
-- JavaScript (vanilla ES6)
+- JavaScript
 
 ---
 
 ## 🙌 Contributing 🙌
 Feel free to fork this project, improve gameplay, or refactor components.
 
-Great base for exploring grid-based game logic in vanilla JavaScript.
+Great base for exploring grid-based game logic in JavaScript.
 
 Enjoy the chase ! 🟡
