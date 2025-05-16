@@ -31,6 +31,8 @@ function movePacman(eventKeyBoard) {
     if (!gGame.isOn || !gPacman) return;
 
     const nextPacmanPosition = getNextPacmanLocation(eventKeyBoard);
+    
+    if (!nextPacmanPosition) return;
     if (nextPacmanPosition.i < 0 || nextPacmanPosition.i >= SIZE ||
         nextPacmanPosition.j < 0 || nextPacmanPosition.j >= SIZE) return;
 
@@ -82,6 +84,9 @@ function getNextPacmanLocation(eventKeyBoard) {
             nextPacmanPosition.j += 1;
             gPacman.currFacing    = 'right';
             break;
+        
+        default:
+            return null;
     }
 
     return nextPacmanPosition;
